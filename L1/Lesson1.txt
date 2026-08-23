@@ -1,0 +1,25 @@
+22/08/2026
+
+KHTN HCM thay Tung
+
+B1: Cach tiep can & complexity
+
+w8 midterm
+w16 final
+
+* : with AI
+
+TA & office hours: 9:30am Sun
+
+ko được vắng quá 3 buổi
+
+I. Algorithmic complexity
+
+thường 10^8 phép toán /sec
+
+Time -> ideal O(log(n)) e.g., for i ... i*=c or i/=c -> log(c)(n)
+
+O(nlogn) -> 2 vong lap long nhau, bên trong là tuyến tính, bên ngoài là nhân chia
+
+O(1) -> hash table
+fibo O(c^n) > O(n^c)
