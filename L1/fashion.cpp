@@ -14,7 +14,7 @@ int main()
             cout << "YES";
         else
             cout << "NO";
-        return 1;
+        return 0;
     }
 
     int count = 0;
@@ -23,11 +23,13 @@ int main()
     for (int i = 0; i < n; i++)
     {
         cin >> a;
-        if (a == 1)
+        if (a == 0)
             count++;
     }
     if (count == 1)
         cout << "YES";
     else
         cout << "NO";
+
+    return 0;
 }

@@ -7,22 +7,30 @@ int main()
 {
     string s;
     string t;
-    string res = "";
     cin >> s >> t;
     int len = s.length();
-    for (int i = 0; i < len; i++)
+    int i = len - 1;
+    while (i >= 0)
     {
-        if ((t[i] - s[i]) < 2)
+        if (s[i] != 'z')
         {
-            res += s[i];
+            s[i]++; // incre 1 char = minimum incre
+            if (s != t)
+            {
+                cout << s;
+            }
+            else
+            {
+                cout << "No such string";
+            }
+            return 0;
         }
-        else
+        if (s[i] == 'z')
         {
-            res += char(s[i] + 1);
+            s[i] = 'a';
+            i--;
         }
     }
-    if (res == s)
-        cout << "No such string";
-    else
-        cout << res;
+    // out while --> i < 0; all char is 'z'
+    cout << "No such string";
 }
