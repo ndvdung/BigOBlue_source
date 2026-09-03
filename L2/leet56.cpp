@@ -12,7 +12,7 @@ public:
         int i = 1;
         for (; i < n; i++)
         {
-            // if start before currend -> merge
+            // if start before currend -> merge, not pushed yet
             if (intervals[i][0] <= currentEnd)
             {
                 // ko can update current start vi khi sort no tu sort theo thang dau tien -> luon start sau curr start
