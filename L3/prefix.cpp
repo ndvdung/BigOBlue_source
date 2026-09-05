@@ -11,7 +11,7 @@ int main()
 
     // declare prefix array, size n + 1 = 8 = size(a) after add 0, all 0 value
     vector<int> P(n + 1, 0); //(size, value)
-    for (int i = 1; i < n + 1; i++)
+    for (int i = 1; i <= n; i++)
     {
         P[i] = P[i - 1] + a[i]; // at P[1] = P[0] + a[1]
     }
