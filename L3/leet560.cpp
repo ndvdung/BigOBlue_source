@@ -8,6 +8,7 @@ private:
 public:
     int subarraySum(vector<int> &nums, int k)
     {
+
         int n = nums.size();
         nums.insert(nums.begin(), 0);
         pref.resize(n + 1, 0);
