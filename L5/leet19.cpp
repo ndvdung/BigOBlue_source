@@ -22,18 +22,18 @@ public:
         {
             fast = fast->next;
         }
-        while (fast != NULL)
+        while (fast->next != NULL) // stop when fast->next == null aka slow->1(3fromlast)->2->last(fast)->null when n=3
         {
             fast = fast->next;
             slow = slow->next;
         }
         ListNode *todelete = slow->next;
 
-        slow = slow->next->next;
+        slow->next = slow->next->next;
         delete todelete;
         ListNode *newhead = dummy->next;
         delete dummy;
 
-        return head;
+        return newhead;
     }
 };
